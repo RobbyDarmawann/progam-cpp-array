@@ -7,3 +7,16 @@ Program ini adalah program sederhana berbasis C++ untuk menyimpan dan menampilka
 - Input jumlah mahasiswa secara dinamis
 - Input nama, alamat, dan hobi setiap mahasiswa
 - Menampilkan daftar mahasiswa dalam format tabel
+
+## Contoh Output
+```
+Masukkan jumlah mahasiswa: 2
+Data 1
+Nama: Anita
+Alamat: Ipilo
+Hobi: Membaca
+Data 2
+Nama: Budi
+Alamat: Telaga
+Hobi: Jalan-jalan
+```
