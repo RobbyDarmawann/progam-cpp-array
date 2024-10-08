@@ -10,7 +10,7 @@ Program ini adalah program sederhana berbasis C++ untuk menyimpan dan menampilka
 
 ## Contoh Output
 ```
-Masukkan jumlah mahasiswa: 2
+Input Jumlah Data: 2
 Data 1
 Nama: Anita
 Alamat: Ipilo
@@ -19,4 +19,9 @@ Data 2
 Nama: Budi
 Alamat: Telaga
 Hobi: Jalan-jalan
+
+DAFTAR MAHASISWA
+No      Nama            Alamat          Hobi
+1       Anita           Ipilo         Membaca
+2       udi             Telaga        Jalan-jalan
 ```
