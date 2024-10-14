@@ -1,38 +1,36 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
-struct Mahasiswa {
-    string nama;
-    string alamat;
-    string hobi;
-};
-
 int main() {
-    int jumlah;
-    
-    cout << "Input Jumlah Data: ";
-    cin >> jumlah;
-    
-    Mahasiswa mahasiswa[jumlah];
-    
-    for (int i = 0; i < jumlah; i++) {
-        cout << "Data " << i+1 << endl; 
-        cout << "Nama: ";
-        cin.ignore(); 
-        getline(cin, mahasiswa[i].nama);
-        cout << "Alamat: ";
-        getline(cin, mahasiswa[i].alamat);
-        cout << "Hobi: ";
-        getline(cin, mahasiswa[i].hobi);
+    int jumlh;
+
+    cout << "Berapa jumlah mahasiswa? "; 
+    cin >> jumlh;
+    cin.ignore(); 
+
+    string nma[jumlh];
+    string alamt[jumlh];
+    string hbi[jumlh];
+
+    for (int a = 0; a < jumlh; a++) {
+        cout << "Mahasiswa ke " << a + 1 << endl;
+        cout << "Nama: "; getline(cin, nma[a]);
+        cout << "Alamat: "; getline(cin, alamt[a]);
+        cout << "Hobi: "; getline(cin, hbi[a]);
+        cout << endl;
     }
-    
+
     cout << "\nDAFTAR MAHASISWA" << endl;
-    cout << "No\tNama\t\tAlamat\t\tHobi" << endl;
+    cout << left << setw(5) << "No" << setw(20) << "Nama" << setw(20) << "Alamat" << setw(20) << "Hobi" << endl;
 
-    for (int i = 0; i < jumlah; i++) {
-        cout << i + 1 << "\t" << mahasiswa[i].nama << "\t\t" << mahasiswa[i].alamat << "\t\t" << mahasiswa[i].hobi << endl;
+    for (int i = 0; i < jumlh; i++) {
+        cout << left << setw(5) << i + 1 
+             << setw(20) << nma[i] 
+             << setw(20) << alamt[i] 
+             << setw(20) << hbi[i] 
+             << endl;
     }
-
     return 0;
 }
